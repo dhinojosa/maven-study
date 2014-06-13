@@ -5,7 +5,7 @@ import com.evolutionnext.services.HelloWorldService;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.inject.Named;
+import javax.faces.bean.ManagedBean;
 
 /**
  * @author Daniel Hinojosa
@@ -15,7 +15,7 @@ import javax.inject.Named;
  * tel: 505.363.5832
  */
 
-@Named("helloWorldManagedBean")
+@ManagedBean(name= "helloWorldManagedBean")
 public class HelloWorldManagedBean {
     private Hello hello;
 

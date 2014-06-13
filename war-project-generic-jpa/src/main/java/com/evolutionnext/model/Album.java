@@ -1,6 +1,9 @@
 package com.evolutionnext.model;
 
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * @author Daniel Hinojosa
@@ -10,9 +13,10 @@ import java.io.Serializable;
  * tel: 505.363.5832
  */
 
-public class Hello implements Serializable {
+@Entity
+public class Album {
 
-    public Hello() {
+    public Album() {
     }
 
     private String name;
@@ -23,5 +27,17 @@ public class Hello implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    private Long id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

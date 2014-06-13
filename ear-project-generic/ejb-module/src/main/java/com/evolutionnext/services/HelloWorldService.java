@@ -1,12 +1,9 @@
 package com.evolutionnext.services;
 
 
-
 import com.evolutionnext.model.Hello;
 
 import javax.ejb.Stateful;
-import javax.inject.Inject;
-import javax.inject.Named;
 import java.io.Serializable;
 
 
@@ -18,7 +15,7 @@ import java.io.Serializable;
  * tel: 505.363.5832
  */
 @Stateful
-public class HelloWorldService implements Serializable{
+public class HelloWorldService implements Serializable {
     public void hello(Hello hello) {
         System.out.println("Received Hello World Message" + hello.getName());
     }
