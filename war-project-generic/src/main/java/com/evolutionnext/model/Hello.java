@@ -1,6 +1,7 @@
 package com.evolutionnext.model;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
 /**
  * @author Daniel Hinojosa
@@ -11,6 +12,7 @@ import javax.faces.bean.ManagedBean;
  */
 
 @ManagedBean
+@SessionScoped
 public class Hello {
 
     public Hello() {

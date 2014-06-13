@@ -20,6 +20,11 @@ public class HelloWorld {
     @ManagedProperty(value="#{hello}")
     private Hello hello;
 
+
+    public void setHello(Hello hello) {
+        this.hello = hello;
+    }
+
     public String greet() {
         return "success";
     }
